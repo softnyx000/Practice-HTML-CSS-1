@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* three lines above to keep things not overflow with padding and margin*/
+  font-family: "Times New Roman", Times, serif;
+}
+
+.clear {
+  clear: both;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  padding: 5rem 0rem;
+}
+
+a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+nav {
+  background: rgb(35, 72, 141);
+  color: white;
+  padding: 1rem;
+  align-content: space-around;
+}
+
+nav h1 {
+  float: left;
+  padding: 1rem;
+  margin: 0rem 4rem;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  padding: 1rem;
+  margin: 0rem 4rem;
+}
+
+.hero-section {
+  background-image: url(https://images.pexels.com/photos/3312664/pexels-photo-3312664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  height: 70rem;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 10rem;
+  text-shadow: 3px 3px 3px black;
+}
+
+.hero-section button {
+  padding: 1rem 5rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  background: rgb(35, 72, 141);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navigator li:nth-child(1) {
+  color: crimson;
+  align-content: space-around;
+}
+
+.form-section {
+  text-align: center;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+  font-size: 2.4rem;
+}
+
+form input,
+form textarea {
+  margin: 2rem auto;
+  width: 50%;
+}
+
+form button {
+  padding: 1rem 5rem;
+  margin-bottom: 10rem;
+  font-size: 1.5rem;
+  background: rgb(35, 72, 141);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+}
+/* 
+id is most important (#)
+class is next (.)
+element is last (name)
+:nth-child = selecting child
+*/
+
+/* em is used to plus default size of html = 16px as parents and child multiple times
+rem is used to plus only default size of html*/
+
+footer {
+  background: rgb(35, 72, 141);
+  align-content: space-around;
+}
+
+footer p {
+  float: left;
+  color: white;
+  padding: 1rem;
+  margin: 0rem 4rem;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer li {
+  float: left;
+}
+
+footer a {
+  font-size: 1.2rem;
+  float: left;
+  padding: 1rem;
+  margin: 0rem 4rem;
+}
+
+@media screen and(width: 650px) {
+  nav {
+    display: flexbox;
+    flex-direction: column;
+  }
+  logo {
+    height: 2rem;
+    width: 2rem;
+  }
+  nav a {
+    font-size: 2rem;
+  }
+}
